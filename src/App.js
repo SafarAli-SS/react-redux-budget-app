@@ -17,7 +17,7 @@ function App() {
       <footer>
         <div className="footer-copyright center-align">
           &copy; Created with React&Redux by{" "}
-          <a href="https://www.safarali.pro/" target="blank">
+          <a href="https://www.safarali.pro/" target="_blank">
             SafarAli Safarov
           </a>
         </div>
