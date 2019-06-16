@@ -1,24 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./index.css";
+import Budget from "./components/budget";
+import Add from "./components/add";
+import List from "./components/list";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="container">
+      <header>
+        <Budget />
       </header>
+      <main>
+        <Add />
+        <List />
+      </main>
+      <footer>
+        <div className="footer-copyright center-align">
+          &copy; Created with React&Redux by{" "}
+          <a href="https://www.safarali.pro/" target="blank">
+            SafarAli Safarov
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }
